@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(backgroundimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* navbar */
+
+nav {
+    background-color: rgb(255, 255, 255);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.title {
+    font-size: 35px;
+    padding: 10px 5px;
+}
+
+nav ul {
+    display: flex;
+    padding: 5px 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    background-color: rgb(112, 211, 211);
+    border-radius: 10px;
+    height: 45px;
+    font-size: 35px;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    color: white;
+}
+/* book a mentor */
+
+.mentor_container{
+    background-color:rgba(242, 228, 209, 0.744);
+    margin-top: 2px;
+    
+}
+.mentor_container ul{
+    display: flexbox;
+    flex-direction: column;
+    padding: 10px;
+}
+.mentor_container ul li{
+    display: flex;
+    padding: 30px 0;
+    list-style-type: none;
+
+}
+.mentor_container ul li a{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+.name-container{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    color: black;
+    font-size: larger;
+}
+.name-container .details{
+    display: none;
+    font-size: 20px;
+    
+}
+
+.name-container .name{
+    font-size: 30px;
+}
+
+.booking-container{
+    display: flex;
+    color: black;
+    font-size: 30px;
+}
+.booking-container div{
+    padding-right: 100px;
+    font-size: 30px;
+}
+    
+.booking-container button{
+ color: black;
+ font-size: 30px;
+ width: 100px;
+ border-radius: 10px;
+}
+
