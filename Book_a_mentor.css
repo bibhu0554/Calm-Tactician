@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+body {
+    background-image: url(backgroundimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    user-select: none;
+
+}
+/* navbar */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,17 +30,19 @@ body {
     background-position: center center;
     background-attachment: fixed;
 }
-/* navbar */
 
 nav {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.874);
+    box-shadow: 20px gray;
 }
 
 nav div {
     display: flex;
+    color: rgb(134, 131, 131);
     align-items: center;
     justify-content: center;
     padding: 10px 0;
+    cursor: default;
 }
 
 .title {
@@ -33,28 +54,41 @@ nav ul {
     display: flex;
     padding: 5px 60px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 nav ul li {
     display: flex;
     align-items: center;
     list-style-type: none;
-    color: white;
-    background-color: rgb(112, 211, 211);
+    color:darkgray;
+    border: 2px solid rgb(110, 156, 131);
     border-radius: 10px;
     height: 45px;
     font-size: 35px;
 }
+nav ul li:hover{
+    border: 2px dotted rgb(110, 156, 131);
+    
+}
 
 nav ul li a {
     padding: 0 10px;
-    color: white;
+    color:rgb(134, 131, 131);
+}
+nav ul li:hover{
+    background-color: rgb(0, 192, 245);
+    color:rgb(254, 254, 254);
+    
+}
+nav ul li a:hover{
+    color:rgb(0, 0, 0);
+
 }
 /* book a mentor */
 
 .mentor_container{
-    background-color:rgba(242, 228, 209, 0.744);
+    background-color:rgba(255, 255, 255, 0.744);
     margin-top: 2px;
     
 }
@@ -64,9 +98,14 @@ nav ul li a {
     padding: 10px;
 }
 .mentor_container ul li{
+    border-bottom: 2px solid rgb(114, 74, 74);
     display: flex;
     padding: 30px 0;
     list-style-type: none;
+    
+}
+.mentor_container ul li:hover{
+    border-bottom: 2px dashed  rgb(114, 74, 74);
 
 }
 .mentor_container ul li a{
@@ -106,5 +145,21 @@ nav ul li a {
  font-size: 30px;
  width: 100px;
  border-radius: 10px;
+}
+/* Footer */
+.footer{
+    background-color: rgb(10, 4, 45);
+    display: flex;
+    align-items: center;
+    height: 100px;
+    font-size: large;
+}
+.links ul li{
+    list-style-type: disc;
+padding-top: 15px;    
+}
+.links ul li a{
+    color: antiquewhite;
+    padding-left: 20px;
 }
 
